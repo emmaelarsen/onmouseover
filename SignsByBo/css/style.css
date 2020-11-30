@@ -1,0 +1,35 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+
+
+/* GENERALT */
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: sans serif;
+    background: beige;
+    color: #fff;
+        }
+
+.overskrift1 {
+color: black;
+font-size: 30px;
+}
+
+.galleri img {
+min-width: 500px;
+max-width: 500px;
+padding: 20px;
+}
+
+
+.galleri {
+display: flex;
+flex-direction: row;
+flex-flow: wrap;
+width: 100%;
+}
