@@ -6,41 +6,22 @@
 //document.ready function tjekker om DOM'en er loaded
 $(document).ready(function() {
             
-console.log('JavaScript from js/js.js: up and running!');
+console.log('Hej fra js/js.js: nu med jQuery!');
 
-    // ... your code here ...
+    // ... din kode begynder her
+    $('#kaffe1').mouseover(function(){
+        $('#kaffe1').attr("src","https://multimusen.dk/wp-content/uploads/cropped-multimusen-150-150-1.png");
+        console.log('Musepilen er over mig nu.');
+    });
     
-
-
-
-document.getElementById("kaffe1").onmouseover = function() {mouseOver()};
+    $('#kaffe1').mouseout(function(){
+        $('#kaffe1').attr("src","images/kaffe.png");
+    });
     
-document.getElementById("kaffe1").onmouseout = function() {mouseOut()};
+    // osv. $('#kaffe2'). ... osv.
+    
+    // ... din kode slut
 
-function mouseOver() {
-document.getElementById("kaffe1").src="images/anton.png";
-}
-
-function mouseOut() {
-  document.getElementById("kaffe1").src="images/kaffe.png";
-}
-    
-
-    
-    /**
-        
-           function mouseOver() {
-            document.getElementById("kaffe1").src = "images/anton.png";
-        }
-
-        function mouseOut() {
-            document.getElementById("kaffe1").src = "images/kaffe.png";
-        }
-    
-        **/ 
-    
-    
-    // ... end ...
 });
 
 
